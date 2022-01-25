@@ -1,7 +1,7 @@
 const {vueSidebar, browserSidebar} = require('./utils/nav.js')
 module.exports = {
     title: 'Tang的学习笔记',
-    description: '平时的一些学习记录',
+    description: '平时的一些学习笔记',
     base:'/blog/',
     themeConfig: {
         logo: '/images/logo.jpg',
