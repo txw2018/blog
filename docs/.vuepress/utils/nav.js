@@ -35,6 +35,11 @@ const vueSidebar = [
         children: ['/vue/extend/']
     },
     {
+        text:'computed',
+        collapsable: false,
+        children: ['/vue/computed/']
+    },
+    {
         text:'nextTick',
         collapsable: false,
         children: ['/vue/nexttick/']

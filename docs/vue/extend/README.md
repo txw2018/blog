@@ -1,4 +1,4 @@
-# extend
+# extend的实现原理
 使用基础 Vue 构造器，创建一个“子类”。参数是一个包含组件选项的对象。他的源代码在`src/core/global-api/extend.js`
 ```javascript
   Vue.extend = function (extendOptions: Object): Function {
