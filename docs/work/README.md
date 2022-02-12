@@ -3,7 +3,7 @@ sidebar: auto
 ---
 # 工作日常需求
 
-## 取消重复请求
+## axios取消重复请求
 
 ```html
 
@@ -100,7 +100,7 @@ sidebar: auto
 
 ```
 
-## 倒计时
+## 使用requestAnimationFrame实现倒计时
 ```typescript
 const inBrowser = typeof window !== 'undefined';
 

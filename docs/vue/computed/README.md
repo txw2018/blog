@@ -248,6 +248,6 @@ get: function reactiveGetter () {
 ```
 这个时候watcher.dirty是为true了，所以就会重新求值，获取新的值，然后渲染的时候就是新值了，计算属性的流程就结束了
 
-## 那什么时候计算属性会生效
+# 那什么时候计算属性会生效
 
 我们知道当第一次访问计算属性的之后dirty会改成false，只有当我们计算属性依赖的响应式值发生变化的时候执行computer watcher的update方法之后把dirty改成true，（上面例子的useless更新值），在watcher.evaluate()才会重新求值，如果我们修改的不是计算属性依赖的响应式值，比如执行上面例子的changeLast方法，dirty就一直是false，就不会重新求值，起到了缓存的作用
