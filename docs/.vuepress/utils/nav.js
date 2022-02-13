@@ -40,6 +40,11 @@ const vueSidebar = [
         children: ['/vue/computed/']
     },
     {
+        text:'watch',
+        collapsable: false,
+        children: ['/vue/watch/']
+    },
+    {
         text:'nextTick',
         collapsable: false,
         children: ['/vue/nexttick/']
