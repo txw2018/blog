@@ -199,9 +199,23 @@ get: function reactiveGetter () {
       return value
     },
 ```
-这个时候useless会把computer watcher收集为依赖，当count的getter方法执行之后，会执行popTarget()方法，让Dep.target又变成渲染watcher，然后会判断Dep.target然后执行  watcher.depend()，这个方法useless会把渲染watcher也收集成依赖
-这个时候useless的dep.subs为[computer watcher，渲染 watcher]
+这个时候useless会把computer watcher收集为依赖，当count的getter方法执行之后，会执行popTarget()方法，让Dep.target又变成渲染watcher，然后会判断Dep.target然后执行  watcher.depend()，
+```js
+   if (Dep.target) {
+        watcher.depend()
+      }
+  //watcher
+    depend () {
+        let i = this.deps.length
+        while (i--) {
+            this.deps[i].depend()
+        }
+    }
+```
 
+watcher.depend()方法执行，当前的这个watcher是computed watcher，因为之前useless会把computer watcher收集为依赖，所以这个watcher也会收集useless的dep到deps里面，所以能通过这样反向查找，找到useless的dep，然后通过 this.deps[i].depend()把渲染watcher也收集到useless的subs里面
+
+这个时候useless的dep.subs为[computer watcher，渲染 watcher]
 
 当我们通过change方法去修改useless的时候，会执行dep.notify方法
 ```javascript
