@@ -83,7 +83,7 @@ export function invokeWithErrorHandling (
   }
 ```
 接下来讲生命周期执行的时机
-## beforeCreate和created
+## beforeCreate & created
 beforeCreate和created是在组件初始化的时候执行的，在Vue.prototype._init方法里面
 ```javascript
 export function initMixin (Vue: Class<Component>) {
@@ -103,7 +103,7 @@ export function initMixin (Vue: Class<Component>) {
 }
 ```
 在beforeCreate和created之间调用了initInjections、initState、initState，这几个方法是用来初始化inject、data、props、methods、computed、watch以及provide等这些配置，所以这些属性我们在beforeCreate访问不到，只有到了created中才能访问
-## beforeMount和mounted
+## beforeMount & mounted
 在组件初始化之后就会执行组件的mount，在mountComponent中执行挂载相关的钩子函数
 ```javascript
 export function mountComponent (
