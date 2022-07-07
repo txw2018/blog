@@ -1,0 +1,1 @@
+const t={key:"v-a01eccbc",path:"/vue/watch/",title:"watch",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1644730211e3,contributors:[{name:"tangxianwen",email:"1658172479@qq.com",commits:1}]},filePathRelative:"vue/watch/README.md"};export{t as data};

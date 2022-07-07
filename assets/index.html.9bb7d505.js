@@ -1,0 +1,1 @@
+const e={key:"v-47c8eb5b",path:"/vue/asynComponent/",title:"initAssetRegisters",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1643092781e3,contributors:[{name:"txw",email:"1658172479@qq.com",commits:1}]},filePathRelative:"vue/asynComponent/README.md"};export{e as data};

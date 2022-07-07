@@ -1,0 +1,1 @@
+const e={key:"v-c9eb7398",path:"/vue/component/",title:"\u7EC4\u4EF6\u6CE8\u518C",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1643092781e3,contributors:[{name:"txw",email:"1658172479@qq.com",commits:1}]},filePathRelative:"vue/component/README.md"};export{e as data};

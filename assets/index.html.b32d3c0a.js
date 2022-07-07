@@ -1,0 +1,1 @@
+const e={key:"v-859a279a",path:"/vue/extend/",title:"extend\u7684\u5B9E\u73B0\u539F\u7406",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1644674694e3,contributors:[{name:"tangxianwen",email:"1658172479@qq.com",commits:1},{name:"txw",email:"1658172479@qq.com",commits:1}]},filePathRelative:"vue/extend/README.md"};export{e as data};
