@@ -148,9 +148,7 @@ function bigAdd(a ,b){
 
 ::: details 实现
 
-```javascript
 @[code](./code/sort-version.js)
-```
 
 :::
 
